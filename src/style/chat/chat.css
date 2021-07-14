@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --grayColor: #dbdbdb;
+    --messageColor: #f1f3f5;
+    --buttonColor: #0f54b9;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    width: 651px;
+    height: 757px;
+    margin: auto;
+    background-image: url(../../assets/chat/background.png);
+    background-size: cover;
+}
+
+.messages{
+    height: 516px;
+    overflow-y: scroll;
+}
+
+.writing{
+    height: 240px;
+    border-top: 1px solid var(--grayColor);
+}

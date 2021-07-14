@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.writing__textfield{
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+    width: 590px;
+    height: 129px;
+    resize: none;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    line-height: 19px;
+    border: 1px solid var(--messageColor);
+    border-radius: 4px;
+    appearance: none;
+    outline: none;
+}
+
+/* В кнопке используется шрифт Proxima Nova, но он платный. Гуглил, бесплатный не нашёл */
+.writing__button{
+    appearance: none;
+    padding: 10px 22px;
+    margin: 20px;
+    margin-top: 0;
+    border: none;
+    border-radius: 21px;
+    background-color: var(--buttonColor);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,79 @@
+.message{
+    display: flex;
+    margin: 20px 0;
+}
+
+.right-message{
+    flex-direction: row-reverse;
+}
+
+.message__face{
+    height: 47px;
+    margin: 0 24px;
+}
+
+.face__img{
+    width: 47px;
+    height: 47px;
+    background-image: url(../../assets/chat/face.png);
+    background-size: cover;
+    clip-path: polygon(
+        50% 0,
+        100% 40%,
+        80% 100%,
+        20% 100%,
+        0% 40%,
+        50% 0
+    );
+}
+
+.message__text{
+    position: relative;
+    display: block;
+    max-width: 440px;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--messageColor);
+    border-radius: 5px;
+}
+
+.message__text::before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: -10px;
+    transform: rotate(45deg);
+    border: 10px solid var(--messageColor);
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.right-message .message__text::before{
+    left: calc(100% - 10px);
+}
+
+.messages__dateline{
+    position: relative;
+}
+
+.dateline__leftline, .dateline__rightline{
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: var(--grayColor);
+}
+
+.dateline__rightline{
+    right: 0;
+}
+
+.dateline__date{
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
