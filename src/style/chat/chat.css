@@ -32,5 +32,5 @@ body{
 
 .writing{
     height: 240px;
-    border-top: 1px solid var(--grayColor);
+    border-top: 1px solid #dbdbdb;
 }

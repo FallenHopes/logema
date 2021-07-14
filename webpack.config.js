@@ -1,4 +1,4 @@
-const temp = 'chat' // Что отображать. Для отображения блока - block
+const temp = 'block' // Что отображать. Для отображения блока - block
 
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
@@ -12,6 +12,7 @@ module.exports = {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
+    target: ['web', 'es5'],
     context: path.resolve(__dirname, 'src'),
     devServer: {
         port: 4000,

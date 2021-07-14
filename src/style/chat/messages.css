@@ -33,7 +33,7 @@
     max-width: 440px;
     margin: 0;
     padding: 15px;
-    background-color: var(--messageColor);
+    background-color: #f1f3f5;
     border-radius: 5px;
 }
 
@@ -46,7 +46,7 @@
     top: 0;
     left: -10px;
     transform: rotate(45deg);
-    border: 10px solid var(--messageColor);
+    border: 10px solid #f1f3f5;
     border-left-color: transparent;
     border-top-color: transparent;
 }
@@ -64,7 +64,7 @@
     top: 50%;
     width: 40%;
     height: 1px;
-    background-color: var(--grayColor);
+    background-color: #dbdbdb;
 }
 
 .dateline__rightline{

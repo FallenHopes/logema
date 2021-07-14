@@ -10,9 +10,10 @@
     margin: 20px;
     box-sizing: border-box;
     line-height: 19px;
-    border: 1px solid var(--messageColor);
+    border: 1px solid #f1f3f5;
     border-radius: 4px;
     appearance: none;
+    overflow: auto; /* Fix for IE 11 */
     outline: none;
 }
 
@@ -24,8 +25,9 @@
     margin-top: 0;
     border: none;
     border-radius: 21px;
-    background-color: var(--buttonColor);
+    background-color: #0f54b9;
     font-size: 16px;
+    letter-spacing: 1px;
     font-weight: bold;
     color: white;
     cursor: pointer;
