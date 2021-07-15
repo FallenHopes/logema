@@ -1,6 +1,10 @@
 main {
+    width: 100%;
     display: grid;
     display: -ms-grid;
+    grid-auto-rows: 155px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
 
@@ -10,3 +14,37 @@ main {
     padding: 15px;
     font-size: 14px;
 }
+
+.our-employees{
+    background-color: #e8ebed;
+    grid-column: 1;
+}
+
+.enlightens{
+    background-color: #e8ebed;
+    grid-column: 2;
+}
+
+.conformism{
+    background-color: #e8ebed;
+    grid-column: 1/3;
+}
+
+.introjection{
+    background-color: #90BCE8;
+}
+
+.our-employees-two{
+    background-color: #FEBF26;
+}
+
+.quadra-block{
+    grid-column: 1/3;
+    display: grid;
+
+}
+
+.genius{
+    overflow-y: scroll;
+}
+
