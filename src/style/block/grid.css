@@ -2,13 +2,19 @@ main {
     width: 100%;
     display: grid;
     display: -ms-grid;
-    grid-auto-rows: 155px;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-auto-rows: minmax(155px, auto);
+    -ms-grid-rows: minmax(155px, auto);
     grid-gap: 10px;
 }
 
 
-.our-employees, .enlightens, .conformism, .introjection, .our-employees-two, .feeling, .genius, .moreno, .but, .inflection-point, .vector-length, .leadership, .incredible-genius{
+.our-employees, .enlightens, .conformism, 
+.introjection, .our-employees-two, .feeling, 
+.genius, .moreno, .but, .inflection-point, 
+.vector-length, .leadership, .incredible-genius,
+.characters, .modern, .ship{
     display: flex;
     align-items: flex-end;
     padding: 15px;
@@ -23,11 +29,13 @@ main {
 .enlightens{
     background-color: #e8ebed;
     grid-column: 2;
+    -ms-grid-column: 2;
 }
 
 .conformism{
     background-color: #e8ebed;
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
 }
 
 .introjection{
@@ -38,13 +46,66 @@ main {
     background-color: #FEBF26;
 }
 
-.quadra-block{
-    grid-column: 1/3;
-    display: grid;
+.characters-block{
+    display: none;
+}
 
+.genius-block{
+    color: white;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    -ms-grid-column: 1/3;
+    -ms-grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ship{
+    color: white;
 }
 
 .genius{
+    width: 59%;
+    height: 210px;
+    box-sizing: border-box;
     overflow-y: scroll;
+    background-color: #A2A9B7;
+}
+
+.feeling-block{
+    width: 39%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feeling, .moreno{
+    height: 49%;
+    box-sizing: border-box;
+    background-color: #A2A9B7;
+}
+
+.but{
+    grid-column: 1/3;
+    -ms-grid-column: 1/3;
+    background-color: #FFAA87;
+}
+
+.inflection-point{
+    background-color: #FFAA87;
+}
+
+.vector-length{
+    background-color: #C7ABD4;
+}
+
+.leadership{
+    background-color: #FFAA87;
+}
+
+.incredible-genius{
+    background-color: #F55E62;
 }
 
